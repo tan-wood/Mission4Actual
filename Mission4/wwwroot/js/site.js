@@ -43,7 +43,9 @@ $("#btnSubmit").click(function () {
     //this will display once the calculator is finished
     $("#heading").html("Your Final Grade:");
 
+    //This will hold and be what is displayed for the final score
     let gradeDisplay = finalNumScore.toFixed(1) + "% (" + letterGrade + ")";
 
+    //displaying the grade
     $("#grade").html(gradeDisplay);
 })

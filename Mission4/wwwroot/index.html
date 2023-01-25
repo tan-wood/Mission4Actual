@@ -4,48 +4,108 @@
     <meta charset="utf-8" />
     <title>Mission 4 Assignment</title>
     <link href="lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <link href="css/StyleSheet.css" rel="stylesheet" />
+    <link rel="icon" href="img/monitor.png" type="image/icon type">
+
 </head>
-<body>
+<body class="bg-light">
+    <div class="row text-center">
+        <div class="col">
+            <h1 class="py-3">Tanner Woodrum</h1><br />
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-3">
+            <img src="img/DoingWhatILove copy.jpg" class="img-fluid border" alt="Doing What I Love" /><br />
+        </div>
+    </div><br /><br />
+    <div class="row">
+        <div class="col">
+            <h2 class="mx-5 px-2">What I hope to get from this class</h2><br />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <p class="mx-5 px-2">
+                I really hope that I will be able to get a good foundation of how to use React in ASP.NET! This would
+                ultimately be the goal. I have a good knowledge and background on how to use C# and ASP.NET in general, but
+                diving deep into it would be awesome! I also would love to get into specific data structures that are not
+                commonly gone over in our core classes.
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <h2 class="mx-5 px-2">Top 3 Jobs I'm interested in pursuing</h2><br />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <ol class="mx-5 px-4">
+                <li>Software Engineer</li>
+                <li>Back-end Developer</li>
+                <li>Web Developer</li>
+            </ol>
+            <br />
+        </div>
+    </div>
 
-    <h1>Tanner Woodrum</h1><br />
-    <img src="img/DoingWhatILove copy.jpg" /><br />
-    <h2>What I hope to get from this class</h2><br />
-    <p>I really hope that I will be able to get a good foundation of how to use React in ASP.NET! This would
-    ultimately be the goal. I have a good knowledge and background on how to use c# and ASP.NET in general, but
-    diving deep into it would be awesome! I also would love to get into specific data structures that are not 
-    commonly gone over in our core classes.
-    </p>
+    <div class="row">
+        <div class="col">
+            <h2 class="mx-5 px-2">Grade Calculator</h2>
+        </div>
+    </div>
 
-    <h2>Top 3 Jobs I'm interested in pursuing</h2><br />
-    <ol>
-        <li>Software Engineer</li>
-        <li>Back-end Developer</li>
-        <li>Web Developer</li>
-    </ol>
+    <div class="row">
+        <div class="col">
+            <h4 class="mx-5 px-2 text-muted">(Input the percentage that you have received for the given category)</h4>
+        </div>
+    </div>
     <br />
-
-    <h2>Grade Calculator</h2>
-    <h3>Input the percentage that you have receieved for the given category.</h3>
-    <form>
-        <label>Assignment</label>
-        <input id="assignments" /><br />
-        <label>Group Project</label>
-        <input id="groupProjects" /><br />
-        <label>Quizzes</label>
-        <input id="quizzes" /><br />
-        <label>Midterm Exam</label>
-        <input id="midterm" /><br />
-        <label>Final Exam</label>
-        <input id="final" /><br />
-        <label>INTEX</label>
-        <input id="intex" /><br />
-        <input type="button" value="Submit" id="btnSubmit"  />
-    </form>
-
-    <h3 id="heading"></h3>
-    <p id="grade"></p>
+    <div class="row">
+        <div class="col-5">
+            <form class="mx-5 px-5">
+                <div class="form-group">
+                    <label class="">Assignment</label>
+                    <input class="form-control" type="number" id="assignments" />
+                </div>
+                <div class="form-group">
+                    <label>Group Project</label>
+                    <input class="form-control" type="number" id="groupProjects" />
+                </div>
+                <div class="form-group">
+                    <label>Quizzes</label>
+                    <input class="form-control" type="number" id="quizzes" />
+                </div>
+                <div class="form-group">
+                    <label>Midterm Exam</label>
+                    <input class="form-control" type="number" id="midterm" />
+                </div>
+                <div class="form-group">
+                    <label>Final Exam</label>
+                    <input class="form-control" type="number" id="final" />
+                </div>
+                <div class="form-group">
+                    <label>INTEX</label>
+                    <input class="form-control" type="number" id="intex" /><br />
+                </div>
+                <input type="button" value="Submit" class="btn btn-success" id="btnSubmit" />
+            </form>
+        </div>
+    </div>
+    <br /><br />
+    <div class="row">
+        <div class="col">
+            <span class="ml-5 pl-2 font-weight-bold" id="heading"></span>
+            <span id="grade"></span>
+        </div>
+    </div>
     <br /><br /><br />
-
+    <div class="row text-center">
+        <div class="col">
+            <a href="https://www.flaticon.com/free-icons/computer" title="computer icons">Computer icons created by xnimrodx - Flaticon</a>
+        </div>
+    </div>
     <script src="lib/bootstrap/dist/js/bootstrap.js"></script>
     <script src="lib/jquery/dist/jquery.js"></script>
     <script src="js/site.js"></script>
