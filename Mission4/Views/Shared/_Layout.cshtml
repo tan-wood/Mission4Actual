@@ -1,0 +1,41 @@
+﻿@*the _ in _layout means it is a supporting file and is not to be pointed to directly
+    Every view will have this as their layout*@
+
+<!DOCTYPE html>
+
+<html>
+<head>
+
+    <meta charset="utf-8" />
+    <title>@ViewData["Title"]</title>
+    @*you have to add the ~/ before all your links so that it will be accessible throughout all the pages*@
+    <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/css/StyleSheet.css" rel="stylesheet" />
+    <link rel="icon" href="~/img/monitor.png" type="image/icon type">
+
+</head>
+<body>
+
+    <nav>
+        <a asp-controller="Home" asp-action="Index">Home</a>
+        <a asp-controller="Home" asp-action="GradeCalculator">Grade Calculator</a>
+    </nav>
+
+    <div>
+        @RenderBody()
+    </div>
+    <br />
+    <br />
+    <br />
+    <div class="row text-center">
+        <div class="col">
+            <a href="https://www.flaticon.com/free-icons/computer" title="computer icons">Computer icons created by xnimrodx - Flaticon</a>
+        </div>
+    </div>
+
+    <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+
+    <script src="~/js/site.js"></script>
+</body>
+</html>
