@@ -1,9 +1,10 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿
 @{
     ViewData["Title"] = "Grade Calculator";
+    
 }
+
+@model GradeCalculatorModels;
 
 
 <div class="row">
@@ -20,33 +21,34 @@
 <br />
 <div class="row">
     <div class="col-5">
-        <form class="mx-5 px-5">
+        <form method="post" class="mx-5 px-5">
             <div class="form-group">
                 <label class="">Assignment</label>
-                <input class="form-control" type="number" id="assignments" />
+                <input class="form-control" type="number" id="assignments" asp-for="Assignment" />
             </div>
             <div class="form-group">
                 <label>Group Project</label>
-                <input class="form-control" type="number" id="groupProjects" />
+                <input class="form-control" type="number" id="groupProjects" asp-for="GroupProject"/>
             </div>
             <div class="form-group">
                 <label>Quizzes</label>
-                <input class="form-control" type="number" id="quizzes" />
+                <input class="form-control" type="number" id="quizzes" asp-for="Quizzes"/>
             </div>
             <div class="form-group">
                 <label>Midterm Exam</label>
-                <input class="form-control" type="number" id="midterm" />
+                <input class="form-control" type="number" id="midterm" asp-for="Midterm"/>
             </div>
             <div class="form-group">
                 <label>Final Exam</label>
-                <input class="form-control" type="number" id="final" />
+                <input class="form-control" type="number" id="final" asp-for="Final"/>
             </div>
             <div class="form-group">
                 <label>INTEX</label>
-                <input class="form-control" type="number" id="intex" /><br />
+                <input class="form-control" type="number" id="intex" asp-for="Intex"/><br />
             </div>
-            <input type="button" value="Submit" class="btn btn-success" id="btnSubmit" />
+            <input type="submit" value="Submit" class="btn btn-success" id="btnSubmit" />
         </form>
+            <div asp-validation-summary="All" id="errors"></div>
     </div>
 </div>
 
